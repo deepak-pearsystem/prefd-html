@@ -113,7 +113,11 @@ body {
 img {
 	max-width: 100%;
 }
-
+body p{
+    font-size: 14px;
+    color: #848484;
+    margin-bottom: 0;
+}
 a:focus,
 input:focus,
 textarea:focus,
@@ -531,7 +535,7 @@ i.fa.fa-chevron-down {
 }
 nav.navbar.navbar-expand-lg {
     min-height: 70px;
-    padding-top: 0px;
+    padding: 0px;
     padding-bottom: 0;
 }
 .column h6 {
@@ -630,7 +634,7 @@ body .btn.focus, body .btn:focus {
 .left-side-bar {
     max-width: 290px;
     padding: 0;
-    margin-left: 15px;
+    
 }
 button.btn.btn-link,
 .location-search-wrap a {
@@ -699,4 +703,225 @@ body .card-body {
     bottom: 0;
     left: -15px;
     box-shadow: inset 0px 1px 0px #EAEAEA;
+}
+
+/* Main content */
+.main-content {
+    max-width: 540px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-side-bar {
+    max-width: 290px;
+    padding: 0;
+}
+.button-decoration button.btn {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 0;
+    padding: 0;
+}
+.post-btn {
+    background-color: #FB252A;
+    font-size: 14px;
+    color: #fff;
+    min-width: 64px;
+    border-radius: 40px;
+}
+
+.post button.btn.post-btn {
+    background-color: #FB252A;
+    margin: 0;
+    border-radius: 40px;
+}
+body .btn.disabled {
+    background-color: #FFD4D5!important;
+}
+body .btn.disabled {
+    background-color: #FFD4D5!important;
+}
+
+.post .search_bar input.form-control {
+    min-height: 66px;
+}
+
+.login_user_avtar {
+    max-width: 30px;
+}
+
+.login_user_avtar +.search_bar.ml-0 {
+    width: calc(100% - 30px);
+}
+textarea#posthere {
+    border: 0;
+    background-color: #f3f4f5;
+    resize: none;
+    padding-top: 2px;
+    min-height: 76px;
+}
+.mb-16 {
+    margin-bottom: 16px!important;
+}
+.pic {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 50%;
+}
+.pic-detail h6 {
+    font-size: 14px;
+    font-weight: 700;
+   
+}
+.pic-detail .department i.fa.fa-circle {
+    font-size: 5px;
+    margin: 0 5px;
+}
+.pic-detail .department img {
+    margin-left: 10px;
+    max-width: 35px;
+}
+.pic-detail {
+    padding-left: 12px;
+    line-height: .5em;
+}
+.summary {
+    margin: 72px 0 16px;
+}
+.news-discrription h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: none;
+    line-height: 1.3em;
+}
+
+.post-btn.post-ref {
+    background-color: #fff;
+    border: 1px solid #FB252A;
+    color: #FB252A;
+    line-height: 18px;
+    font-weight: 600;
+    text-shadow: none;
+}
+.news-discrription {
+    background-color: #fff;
+    padding: 20px;
+}
+.news-discrription .row {
+    padding: 5px 0 10px;
+}
+.sup-text {
+    font-size: 12px;
+}
+.action-btn span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #848484;
+}
+
+.action-btn button.btn {
+    padding: 0;
+    margin-right: 20px;
+}
+.comment-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.comment-post {
+    justify-content: space-between;
+    padding-top: 16px;
+    align-items: center;
+}
+
+.comment-post .search_bar {
+    min-width: 338px;
+    margin: 0;
+   
+}
+
+.comment-post .search_bar input.form-control, .comment-post .search_bar, .comment-post .search_bar .input-group-append>button.btn.btn-secondary{
+
+     background-color: #fff;
+}
+
+
+
+
+/* Right side bar */
+.user-group {
+    background-color: #FEF1EF;
+    padding: 50px 50px 0 50px;
+    text-align: center;
+}
+
+a.view-more {
+    color: #FB252A;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.user-group h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user-group .view-more {
+    margin-bottom: 8px;
+}
+
+.profile-wrap.underline {
+    margin-bottom: 8px;
+}
+
+.profile-wrap p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0 30px 0;
+}
+.current_user_avtar {
+    max-width: 96px;
+    max-height: 96px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.adjust_underline.underline::before {
+    width: calc(100% + 100px);
+    left: -50px;
+}
+.view-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.new-user-wrap img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.user-name h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.wrap-new {
+    margin-bottom: 20px!important;
+}
+
+.wrap-new:last-child {
+    margin-bottom: 0!important;
+}
+a.view-more.new-user-more {
+    display: flex;
+    justify-content: center;
+}
+.heading-green h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #37BDA4;
+    padding-bottom: 30px;
 }
