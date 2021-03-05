@@ -27,11 +27,11 @@ $(document).ready(function () {
       
   }
   $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-  });
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });  
+    $('[data-toggle="popover"]').popover({
+        placement : 'right',
+        trigger: 'hover'
+    });
+}); 
 
 
   $(".services-drop").click(function(){

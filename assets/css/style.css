@@ -1519,7 +1519,19 @@ body .progress-bar {
 	position: absolute;
 	cursor: pointer;
 }
+.popover-body {
+    background-color: #323232;
+    color: #fff;
+}
 
+.bs-popover-right>.arrow::after {
+    border-right-color: #323232;
+}
+
+.popover {
+    top: 73px!important;
+}
+/* Create post modal */
 .modal-action-btn button {
 	padding: 0;
 	min-width: 110px;
