@@ -43,7 +43,7 @@
                            </li>
                            <li class="dropdown megamenu">
                               <button class="dropbtn">services 
-                                 <img src="assets/images/chevron-up.png">
+                              <img src="assets/images/chevron-up.png">
                               </button>
                               <div class="dropdown-content">
                                  <div class="row">
@@ -220,7 +220,6 @@
          </div>
       </header>
       <!--====== HEADER PART ENDS ======-->
-
       <!-- =======Middle main content =======-->
       <div class="main-site">
          <div class="container">
@@ -290,7 +289,6 @@
                   </aside>
                </div>
                <!-- ========Left side bar========== -->
-
                <!-- ========Middle content========== -->
                <div class="col-md-6 main-content">
                   <div class="main-content-wrap">
@@ -318,7 +316,7 @@
                                  <button class="btn"><img src="assets/images/chain.png"></button>
                               </div>
                               <div class="col-md-3 p-0 text-right">
-                                 <button class="btn post-btn disabled">Post</button>
+                                 <button class="btn post-btn disabled" data-toggle="modal" data-target="#post">Post</button>
                               </div>
                            </div>
                         </div>
@@ -541,7 +539,6 @@
                   </div>
                </div>
                <!-- ========Middle content========== -->
-               
                <!-- ========Right side bar========== -->
                <div class="col-md-3 right-side-bar">
                   <div class="m-0 mb-16 user-group border-radius-10">
@@ -632,7 +629,6 @@
          </div>
       </div>
       <!-- =======Middle main content end =======-->
-
       <!-- =========side bar coming on click at humberger=========== -->
       <div class="sidebar-nav">
          <ul class="nav ">
@@ -726,7 +722,60 @@
          </ul>
       </div>
       <!-- =========side bar coming on click at humberger end=========== -->
-
+      <!-- =======Post Modal======== -->
+      <div class="modal fade modal-dashboard action-modal create_post" id="post">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header text-center">
+                  <h4 class="modal-title w-100">Create Post</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12 p-0">
+                        <div class="row modal-action-btn">
+                           <button class="btn active "> General</button>  
+                           <button class="btn ">Promotion</button>                                     
+                           <button class="btn ">Artical</button>                                     
+                           <button class="btn">Tender</button> 
+                        </div>
+                     </div>
+                     <div class="col-md-12 p-0 write-post">
+                        <div class="d-flex">
+                           <div class="login_user_avtar">
+                              <img src="assets/images/user.png">
+                           </div>
+                           <div class="search_bar ml-0">
+                              <div class="form-group form-focus form-inline">
+                                 <div class="input-group">
+                                    <textarea class="form-control" id="posthere" rows="8" placeholder="What’s on your mind?"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-footer ">
+                  <div class="row w-100">
+                     <div class="col-md-9 p-0 button-decoration">
+                        <button class="btn"><img src="assets/images/image.png"></button>
+                        <button class="btn"><img src="assets/images/camera.png"></button>
+                        <button class="btn"><img src="assets/images/file.png"></button>
+                        <button class="btn"><img src="assets/images/chain.png"></button>
+                     </div>
+                     <div class="col-md-3 p-0 text-right">
+                        <button class="btn post-btn disabled" >Post</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- =======Post Modal======== -->
       <script type="text/javascript" src="assets/js/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
