@@ -89,12 +89,14 @@
     1. GLOBAL css 
 ===========================*/
 
-  
+body .row {
+    margin: 0;
+}
 body {
     font-family: 'Proxima Nova';
     font-weight: normal;
     font-style: normal;
-   
+   font-size: 14px;
     background: #fff;
 }
 
@@ -164,6 +166,7 @@ ul,ol {
 
 body .container{
     max-width: 1250px;
+    padding: 0;
 }
 .main-site {
     margin-top: 24px;
@@ -922,9 +925,319 @@ a.view-more.new-user-more {
     display: flex;
     justify-content: center;
 }
-.heading-green h6 {
+.new-user-heading h6 {
     font-size: 14px;
     font-weight: 700;
-    color: #37BDA4;
+   
     padding-bottom: 30px;
+}
+.heading-green h6 ,.heading-green,
+.heading-green h1,.heading-green h2,.heading-green h3,
+.heading-green h4,.heading-green h5{
+    color: #37BDA4;
+}
+
+/* Edit profile banner */
+.banner {
+    min-height: 316px;
+    background-image: url(../../assets/images/edit_profile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.w-72 {
+    width: 72px;
+    height: 72px;
+    
+}
+.profile-bg-change {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.profile-bg-change button {
+    margin: auto;
+    position: relative;
+}
+
+.profile-bg-change:before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1;
+    border-radius: 50%;
+    }
+    .w-290 {
+        max-width: 290px;
+    }
+    
+    body .view_profile-avtar {
+       
+        align-items: flex-end;
+        min-height: 316px;
+        max-width: 180px;
+        max-height: 180px;
+        margin: auto;
+        border-radius: 50%;
+        margin-top: 14px;
+        position: relative;
+    }
+    .camera-for-avtar:before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        
+        border-radius: 50%;
+    }
+    .camera-for-avtar {
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+    }
+    .camera-for-avtar,.camera-for-avtar button.btn,
+    .view_profile-avtar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .camera-for-avtar button.btn {
+        padding: 0;
+        position: relative;
+        margin: auto;
+        
+        width: 40px;
+        min-height: 40px;
+    }
+    .counter h5 {
+        font-size: 16px;
+        line-height: 1.1em;
+    }
+    
+    .counter .col-md-12 .row {
+        padding-bottom: 30px;
+    }
+    .counter-thumb {
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    line-height: 72px;
+    }
+    h2.number {
+        font-size: 32px;
+        font-weight: 700;
+        color: #FB252A;
+        padding: 24px 0 22px;
+    }
+    .right-side-section {
+        
+        margin-left: 30px;
+    }
+    .right-side-section input,
+    .right-side-section select {
+        border-radius: 40px;
+        min-height: 40px;
+    }
+    .right-side-section input:focus,
+    body .form-control:focus {
+        background-color: #f3f4f5;
+    }
+    .w-856{
+        max-width: 856px;
+    }
+    .w-816{
+        max-width: 816px;
+    }
+    .right-side-section input.form-control,.right-side-section textarea,
+    .right-side-section select {
+        max-width: 816px;
+    }
+    .editdyanmic div {
+        width: 100%;
+    }
+    textarea{
+        resize: none;
+    }
+    .counter {
+        max-height: 273px;
+    }
+    .right-side-section textarea {
+        min-height: 90px;
+        font-size: 14px;
+    }
+    .editdyanmic button {
+        padding: 0;
+        max-width: 24px;
+        max-height: 24px;
+        margin-left: 16px;
+    }
+    
+    .fortextarea {
+        align-items: flex-start;
+    }
+    .right-side-section  .form-group {
+        margin-bottom: 20px;
+    }
+    .nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: 0;
+}
+
+
+.nav-tabs .nav-link, .nav-tabs .nav-link,
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: 0;
+    outline: 0;
+    margin: 0;
+    
+}
+.nav-tabs {
+    display: flex;
+}
+.nav-tabs li {
+    width: 25%;
+    text-align: center;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+.nav-tabs .nav-link.active {
+    color: #FB252A;
+    border-bottom: 3px solid #FB252A;
+    margin-bottom: -2px;
+}
+.nav-tabs .nav-link {
+    padding-bottom: 10px;
+    color: #181818;
+    font-size: 16px;
+}
+.right-side-section label {
+    font-size: 14px;
+    font-weight: 600;
+}
+.right-side-section h4 label {
+    font-size: 24px;
+}
+
+.category-wrap .col-md-3 {
+    padding: 0;
+    margin: 0 4px;
+    flex: 0 0 24.2%;
+}
+.category-wrap .col-md-3:first-child {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.category-wrap .col-md-3:last-child {
+    margin-right: 0;
+}
+.category-discription {
+    padding: 16px 0 16px 12px;
+    border-radius: 0 0px 10px 10px;
+}
+.category {
+    position: relative;
+}
+.category-edit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.category-edit:before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    border-radius: 50%;
+}
+.category-edit button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+.category-edit button svg {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.category-edit button svg path {
+    stroke: #fff;
+    fill: #615b56;
+}
+.category-discription h6 {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.category-wrap .col-md-3:first-child p {
+    padding-top: 16px;
+    line-height: 20px;
+}
+
+.right-side-section .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.category-heading h4 {
+    padding: 24px 0;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.post-btn.add {
+    min-width: 122px;
+    max-height: 36px;
+}
+.reset_underline.underline:before {
+    width: 100%;
+    left: 0;
+    max-width: 816px;
+}
+.reset_underline.underline {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.right-side-section select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../../assets/images/path.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+.pic-detail.employee {
+    line-height: 1.3em;
+}
+.pic-detail.employee h6.name {
+    margin-bottom: 5px;
+}
+.pic-detail.employee h6.name {
+    margin-bottom: 5px;
+}
+div#Employees .col-md-4 a {
+    font-size: 14px;
+    font-weight: 600;
+}
+.employee-count {
+    margin-bottom: 16px!important;
 }
