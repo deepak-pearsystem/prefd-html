@@ -815,8 +815,18 @@ textarea#posthere {
 .news-discrription .row {
     padding: 5px 0 10px;
 }
-.sup-text {
+.sup-text,
+.comment-parent-detail p.time,
+a.read-more {
     font-size: 12px;
+}
+
+a.read-more {
+    color: #FB252A;
+    font-weight: 600;
+}
+.color-red{
+    color: #FB252A;
 }
 .action-btn span {
     font-size: 12px;
@@ -1046,8 +1056,7 @@ a.view-more.new-user-more {
         
         margin-left: 30px;
     }
-    .right-side-section input,
-    .right-side-section select {
+    .right-side-section input:not(.form-check-input), .right-side-section select {
         border-radius: 40px;
         min-height: 40px;
     }
@@ -1240,4 +1249,101 @@ div#Employees .col-md-4 a {
 }
 .employee-count {
     margin-bottom: 16px!important;
+}
+.bar-wrap {
+    margin-bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    width: 93%;
+    max-height: 9px;
+}
+
+.number {
+    margin-left: 10px;
+}
+.filter-review h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.filter-review 
+ label.form-check-label {
+    font-weight: 400;
+}
+.bar-section {
+    margin-top: 32px;
+}
+.filter-review .form-check {
+    margin-bottom: 11px;
+}
+body .progress-bar {
+    background-color: #37BDA4;
+}
+.w-40 {
+    max-width: 40px;
+    max-height: 40px;
+}
+.comment-parent-detail .pic-detail.employee {
+    padding-left: 0;
+}
+.comment-parent-detail {
+    flex: 0 0 95%;
+    max-width: 100%;
+    padding-left: 16px!important;
+}
+.comment-parent-detail .row {
+    margin: 8px 0;
+}
+
+
+.sub-comment .comment-parent-detail {
+    flex: 0 0 94%;
+}
+
+.sub-comment .card-body.row,
+.sub-comment .card-body.row a {
+    padding: 0;
+}
+
+.sub-comment .card-body.row a {
+    width: auto;
+}
+.accordion.sub-comment button {color: #37bda4;font-size: 14px;font-weight: 600;padding: 14px 0;}
+
+.accordion.sub-comment button i.fa-caret-down {
+    margin-right: 10px;
+}
+.reply {
+    font-weight: 600;
+}
+.reply img {
+    margin-right: 10px;
+}
+.review-search-wrap .underline {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.sub-comment .comment-user-pic,
+.sub-comment .col-md-1.p-0.comment-parent-image {
+    max-width: 30px;
+}
+
+.sub-comment .col-md-1.p-0.comment-parent-image {
+    max-height: 30px;
+}
+.view-more-bg-green button {
+    background-color: #E3F7F9;
+    color: #37BDA4;
+    min-width: 184px;
+    max-height: 36px;
+    border-radius: 18px;
+    font-size: 14px;
+}
+.category-heading h4 span {
+    padding-left: 7px;
 }
