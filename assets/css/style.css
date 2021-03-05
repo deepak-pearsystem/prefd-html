@@ -169,7 +169,7 @@ body .container{
     padding: 0;
 }
 .main-site {
-    margin-top: 24px;
+    margin: 24px 0;
 }
 /*===========================
     2. HEADER css 
@@ -462,7 +462,7 @@ input.form-control {
     margin: 0;
     display: block!important;
    
-    z-index: 1;
+    z-index: 9;
   }
   .dropdown-content>.row {
     box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 4%);
@@ -961,7 +961,7 @@ a.view-more.new-user-more {
     
 }
 .profile-bg-change {
-    display: flex;
+   width: 72px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1346,4 +1346,33 @@ body .progress-bar {
 }
 .category-heading h4 span {
     padding-left: 7px;
+}
+.employee-count+.view-more-bg-green {
+    margin-top: 15px;
+}
+.custom-file-input {
+    display: block;
+    height: 72px;
+    background-image: url(../../assets/images/green-camera.png);
+    z-index: 9999999999;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.profile-bg-change img {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.camera-for-avtar .custom-file-input {
+    width: 40px;
+    max-height: 40px;
+    z-index: 999;
+}
+.camera-for-avtar .custom-file-input+ img {
+    position: absolute;
+    cursor: pointer;
 }
